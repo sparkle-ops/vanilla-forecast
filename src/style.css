@@ -1,22 +1,75 @@
 body {
-  background: linear-gradient(
-    45deg,
-    #ffb76b 0%,
-    #ffa73d 50%,
-    #fa7b04 51%,
-    #ff7f04 100%
-  );
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.weather-app {
-  background: #fa7b04;
-  max-width: 600px;
-  margin: 45px auto;
-  border-radius: 16px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-  padding: 30px;
-}
+    background: linear-gradient(
+      45deg,
+      #ffb76b 0%,
+      #ffa73d 50%,
+      #fa7f0d 51%,
+      #ff7f04 100%
+    );
+    font-family: "Roboto Mono", monospace;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 38px;
+    line-height: 48px;
+  }
+  p strong{
+    color:lab(31.28% 58.27 -26.4 / 0.699); ;
+  }
+  
+  a {
+    color: lab(31.28% 58.27 -26.4 / 0.699);
+  }
+  
+  .weather-app {
+    background: #fa7b04;
+    max-width: 600px;
+    margin: 45px auto;
+    border-radius: 16px;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    padding: 30px;
+    font-weight: 500;
+  }
+  
+  header {
+    border-bottom: 1px solid #ff7f04;
+    padding-bottom: 30px;
+  }
+  
+  .search-form-input {
+    background-color: #f3eeea;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+  
+  .search-form-button {
+    background: lab(31.28% 58.27 -26.4 / 0.699);
+    border: none;
+    border-radius: 6px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    color: rgb(0, 0, 0);
+  }
+  
+  main {
+    padding: 30px 0;
+  }
+  
+  .weather-app-data {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer {
+    border-top: 1px solid #fa7f0d;
+    padding: 30px 0 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+  }
